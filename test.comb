@@ -1,0 +1,28 @@
+#!/bin/bash -xv
+# SPDX-FileCopyrightText: 2024 Sora Hirano
+# SPDX-License-Identifier: BSD-3-Clause
+
+ng () {
+       echo ${1}行目が違うよ
+       res=1
+}
+
+res=0
+
+# テストケース1: 正常な入力
+out=$(echo "5 3" | ./comb.py)
+[ "${out}" = "5C3 = 10" ] || ng "$LINENO"
+
+# テストケース2: 無効な入力
+out=$(echo "5 a" | ./comb.py)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "無効な入力: 5 a" ] || ng "$LINENO"
+
+# テストケース3: 空の入力
+out=$(echo | ./comb.py)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "無効な入力: " ] || ng "$LINENO"
+
+[ "${res}" = 0 ] && echo OK
+exit $res
+
