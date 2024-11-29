@@ -1,13 +1,19 @@
 # robosys2024
 
-#combコマンド - Cの計算(組み合わせ)
-[![test]()]()
+# combコマンド - Cの計算(組み合わせ)
+[![test](https://github.com/Sora0616/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/Sora0616/robosys2024/actions/workflows/test.yml)
 
-#概要
-
+## 概要
 組み合わせの計算を行うことができるコマンドです.
-ひらがな、カタカナ、アルファベット、空白等の数字以外の入力は無効な入力と出　力されます.
 
-#クローン方法
+## 必要なソフトウェア
+- Ubuntu 20.04
+- Python
+ - テスト済みバージョン: 3.7 ~ 3.11
+
+#テスト環境
+
+- Ubuntu 20.04
+- Python 3.7 ~ 3.11
 
 
