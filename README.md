@@ -2,7 +2,7 @@
 ロボットシステム学で利用するリポジトリ
 
 # combコマンド - Cの計算(組み合わせ)
-[![test](https://github.com/Sora0616/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/Sora0616/robosys2024/actions/workflows/test.yml)
+[![test](https://github.com/Sora0616/robosys2024/actions/workflows/test.comb.yml/badge.svg)](https://github.com/Sora0616/robosys2024/actions/workflows/test.comb.yml)
 
 
 # 概要
@@ -47,7 +47,7 @@ $ echo "5 6" | ./comb.py
 ```
 無効な入力: 5 6
 ```
-本来、nCrの計算ではn > rであるが、ここではn < rとなっているため、無効な入力と出力さアれます。
+本来、nCrの計算ではn > rであるが、ここではn < rとなっているため、無効な入力と出力されます。
 - 実行例(失敗例2)
 ```
 $ echo "-5 -3" | ./comb.py
@@ -57,6 +57,12 @@ $ echo "-5 -3" | ./comb.py
 無効な入力: -5 -3
 ```
 組み合わせの計算は、ｎ個の中からｒ個選ぶ組み合わせを計算するため負の定数に対する定義がされていません。よって、無効な入力と出力されます。
+$ echo "6.2 2.2" | ./comb.py
+```
+- 実行結果
+```
+無効な入力: 5 6
+```
 ## 3.
 ## 4.
 ## 5.
