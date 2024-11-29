@@ -19,10 +19,10 @@
 ## Python 3.7 ~ 3.11
 
 # 利用方法について
-##1.インストール
+## 1.インストール
 - 以下のコマンドでリポジトリをクローンしてください.
-$ git clone https://github.com/Sora0616/robosys2024.git
-,,,,
+'''
+$ git clone git@github.com:Sora0616/robosys2024.git
 2.
 3.
 4.
