@@ -1,7 +1,7 @@
 # robosys2024
 ロボットシステム学で利用するリポジトリ
 
-# combコマンド - Cの計算(組み合わせ)
+# 'combnation' - Cの計算(組み合わせ)
 [![test](https://github.com/Sora0616/robosys2024/actions/workflows/test.comb.yml/badge.svg)](https://github.com/Sora0616/robosys2024/actions/workflows/test.comb.yml)
 
 
