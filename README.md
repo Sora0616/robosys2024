@@ -1,7 +1,7 @@
 # robosys2024
 ロボットシステム学で利用するリポジトリ
 
-# 'combnation' - Cの計算(組み合わせ)
+# combnation -  nCr の計算(組み合わせ)
 [![test](https://github.com/Sora0616/robosys2024/actions/workflows/test.comb.yml/badge.svg)](https://github.com/Sora0616/robosys2024/actions/workflows/test.comb.yml)
 
 
