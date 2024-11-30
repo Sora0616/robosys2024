@@ -32,12 +32,12 @@ $ git clone git@github.com:Sora0616/robosys2024.git
 
 2.ターミナルで以下のコマンドを入力し、ディレクトリを移動してください。
 ```
-cd robosys2024
+$ cd robosys2024
 ```
 
 3.ターミナルで以下のコマンドを入力し、スクリプトを実行可能状態にしてください。
 ```
-chmod +x comb.py
+$ chmod +x comb.py
 ```
 
 ## 2.実行説明
