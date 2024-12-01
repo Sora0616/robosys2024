@@ -2,7 +2,7 @@
 ロボットシステム学で利用するリポジトリ
 
 # combnation -  nCr の計算(組み合わせ)
-[![test](https://github.com/Sora0616/robosys2024/actions/workflows/test.comb.yml/badge.svg)](https://github.com/Sora0616/robosys2024/actions/workflows/test.comb.yml)
+[![test](https://github.com/Sora0616/robosys2024/actions/workflows/test.combination.yml/badge.svg)](https://github.com/Sora0616/robosys2024/actions/workflows/test.combination.yml)
 
 
 # 概要
@@ -37,10 +37,10 @@ $ cd robosys2024
 
 3.ターミナルで以下のコマンドを入力し、スクリプトを実行可能状態にしてください。
 ```
-$ chmod +x comb.py
+$ chmod +x combination.py
 ```
 
-## 2.実行
+## 2.実行方法
 ターミナルで以下のコマンドを入力し、実行してください。
 ```
 $ echo 5 3 | ./comb.py
