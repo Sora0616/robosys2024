@@ -20,5 +20,3 @@ for line in sys.stdin:
     except ValueError:
         print(f"無効な入力: {user_input}")
         sys.exit(1)  
-
-
