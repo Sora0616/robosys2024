@@ -1,12 +1,12 @@
 # robosys2024
 ロボットシステム学で利用するリポジトリ
 
-# combnationコマンド -  nCr (組み合わせ)の計算
+# combnationコマンド 
 [![test](https://github.com/Sora0616/robosys2024/actions/workflows/test.combination.yml/badge.svg)](https://github.com/Sora0616/robosys2024/actions/workflows/test.combination.yml)
 
 
 ## 概要
-ターミナル上で組み合わせの計算を行うことができるコマンドです。
+ターミナル上でnCr (組み合わせ)の計算を行うことができるコマンドです。
 
 ## 必要なソフトウェア
 - Ubuntu 20.04
@@ -26,7 +26,7 @@ $ sudo apt install git
 
 1.ターミナルで以下のコマンドを入力し、リポジトリをクローンしてください。
 ```
-$ git clone git@github.com:Sora0616/robosys2024.git
+$ git clone https://github.com/Sora0616/robosys2024.git
 ```
 
 2.ターミナルで以下のコマンドを入力し、ディレクトリを移動してください。
