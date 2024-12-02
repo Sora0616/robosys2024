@@ -19,4 +19,5 @@ for line in sys.stdin:
         print(f"{n}C{r} = {result}")
     except ValueError:
         print(f"エラー")
-        sys.exit(1)  
+        sys.exit(1) 
+
