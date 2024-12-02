@@ -16,32 +16,32 @@ out=$(echo 5 3 | ./combination.py)
 # テストケース2: nCr : n < r
 out=$(echo 5 6 | ./combination.py)
 [ "$?" = 1 ] || ng "$LINENO"
-[ "${out}" = "無効な入力: 5 6" ] || ng "$LINENO"
+[ "${out}" = "エラー" ] || ng "$LINENO"
 
 # テストケース3: nCr : n < 0
 out=$(echo -5 -3 | ./combination.py)
 [ "$?" = 1 ] || ng "$LINENO"
-[ "${out}" = "無効な入力: -5 -3" ] || ng "$LINENO"
+[ "${out}" = "エラー" ] || ng "$LINENO"
 
 # テストケース4: 小数の入力 
 out=$(echo 6.2 3.3 | ./combination.py)
 [ "$?" = 1 ] || ng "$LINENO"
-[ "${out}" = "無効な入力: 6.2 3.3" ] || ng "$LINENO"
+[ "${out}" = "エラー" ] || ng "$LINENO"
 
 # テストケース5: 分数の入力
 out=$(echo 5/4 1/2 | ./combination.py)
 [ "$?" = 1 ] || ng "$LINENO"
-[ "${out}" = "無効な入力: 5/4 1/2" ] || ng "$LINENO"
+[ "${out}" = "エラー" ] || ng "$LINENO"
 
 # テストケース6: 数字以外の入力
 out=$(echo 5 a | ./combination.py)
 [ "$?" = 1 ] || ng "$LINENO"
-[ "${out}" = "無効な入力: 5 a" ] || ng "$LINENO"
+[ "${out}" = "エラー" ] || ng "$LINENO"
 
 # テストケース7: 空の入力
 out=$(echo | ./combination.py)
 [ "$?" = 1 ] || ng "$LINENO"
-[ "${out}" = "無効な入力: " ] || ng "$LINENO"
+[ "${out}" = "エラー" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK
 exit $res
