@@ -45,3 +45,4 @@ out=$(echo | ./combination.py)
 
 [ "${res}" = 0 ] && echo OK
 exit $res
+
