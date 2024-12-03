@@ -13,4 +13,3 @@ for line in sys.stdin:
     n, r = map(int, user_input.split())
     result = combination(n, r)
     print(f"{n}C{r} = {result}") 
-
