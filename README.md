@@ -1,7 +1,7 @@
 # robosys2024
 ロボットシステム学で利用するリポジトリ
 
-# combnationコマンド 
+# combinationコマンド 
 [![test](https://github.com/Sora0616/robosys2024/actions/workflows/test.combination.yml/badge.svg)](https://github.com/Sora0616/robosys2024/actions/workflows/test.combination.yml)
 
 
@@ -14,7 +14,7 @@
    - テスト済みバージョン: 3.7 ~ 3.11
 
 ## テスト環境
-- Ubuntu 22.04
+- Ubuntu 22.04 - LTS
 - Python 3.7 ~ 3.11
 
 ## 利用方法について
