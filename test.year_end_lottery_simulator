@@ -1,5 +1,5 @@
 #!/bin/bash -xv
-# SPDX-FileCopyrightText: 2024 Sora Hirano
+# SPDX-FileCopyrightText: 2025 Sora Hirano
 # SPDX-License-Identifier: BSD-3-Clause
 
 ng () {
