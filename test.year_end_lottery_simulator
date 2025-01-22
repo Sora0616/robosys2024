@@ -1,0 +1,38 @@
+#!/bin/bash -xv
+# SPDX-FileCopyrightText: 2024 Sora Hirano
+# SPDX-License-Identifier: BSD-3-Clause
+
+ng () {
+    echo "${1}行目が違うよ"
+    res=1
+}
+
+res=0
+
+# テストケース1: 購入金額がちょうど300円
+out=$(echo 300 | ./year_end_lottery_simulator)
+[[ "${out}" == *"購入枚数: 1枚"* && "${out}" == *"おつり: 0円"* ]] || ng "$LINENO"
+
+# テストケース2: 購入金額が1000円
+out=$(echo 1000 | ./year_end_lottery_simulator)
+[[ "${out}" == *"購入枚数: 3枚"* && "${out}" == *"おつり: 100円"* ]] || ng "$LINENO"
+
+# テストケース3: 購入金額が300円未満（100円）
+out=$(echo 100 | ./year_end_lottery_simulator)
+[ "$?" != 0 ] || ng "$LINENO"
+
+# テストケース4: 購入金額が0円
+out=$(echo 0 | ./year_end_lottery_simulator)
+[ "$?" != 0 ] || ng "$LINENO"
+
+# テストケース5: 不正な入力（文字列）
+out=$(echo "abc" | ./year_end_lottery_simulator)
+[ "$?" != 0 ] || ng "$LINENO"
+
+# テストケース6: 不正な入力（負の値）
+out=$(echo -100 | ./year_end_lottery_simulator)
+[ "$?" != 0 ] || ng "$LINENO"
+
+[ "${res}" = 0 ] && echo OK
+exit $res
+

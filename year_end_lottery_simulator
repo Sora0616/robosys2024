@@ -1,0 +1,88 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Sora Hirano <s23c1115wh@s.chibakoudai.jp>
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+import random
+
+# 一口の価格
+price_per_ticket = 300
+
+# 等級ごとの当選確率と当選金額
+lottery = {
+    '1等': 1 / 20000000,
+    '1等前後賞': 1 / 10000000,
+    '1等組違い賞': 1 / 1000000,
+    '2等': 1 / 2500000,
+    '3等': 1 / 50000,
+    '4等': 1 / 10000,
+    '5等': 1 / 1000,
+    '6等': 1 / 100,
+    '7等': 1 / 10,
+}
+
+prize_money = {
+    '1等': 700000000,
+    '1等前後賞': 150000000,
+    '1等組違い賞': 100000,
+    '2等': 10000000,
+    '3等': 1000000,
+    '4等': 50000,
+    '5等': 10000,
+    '6等': 3000,
+    '7等': 300,
+}
+
+# 抽選関数
+def draw_lottery():
+    rand_num = random.random()
+    cumulative_prob = 0.0
+    for grade, prob in lottery.items():
+        cumulative_prob += prob
+        if rand_num < cumulative_prob:
+            return grade
+    return "外れ"
+
+# 標準入力から購入金額を読み取る
+try:
+    purchase_amount = int(sys.stdin.read().strip())
+    if purchase_amount < 300:
+        raise ValueError("購入金額が300円未満です。")
+except ValueError:
+    sys.exit(1)
+
+# 購入枚数を計算
+num_tickets = purchase_amount // price_per_ticket
+change = purchase_amount % price_per_ticket
+
+# 当選枚数を集計する辞書
+win_count = {key: 0 for key in lottery.keys()}
+win_count["外れ"] = 0
+
+# シミュレーション実行
+total_winnings = 0
+for i in range(1, num_tickets + 1):
+    result = draw_lottery()
+    win_count[result] += 1
+    if result != "外れ":
+        winnings = prize_money[result]
+        total_winnings += winnings
+
+# 購入情報とお釣りを表示
+print(f"購入枚数: {num_tickets}枚")
+print(f"おつり: {change}円")
+
+# 結果表示
+for grade, count in win_count.items():
+    if count > 0:
+        print(f"{grade}: {count}枚")
+
+print(f"合計当選金額: {total_winnings}円")
+
+# 還元率を計算して表示
+if purchase_amount > 0:
+    payout_ratio = (total_winnings / purchase_amount) * 100
+    print(f"還元率: {payout_ratio:.2f}%")
+else:
+    sys.exit(1)
+
