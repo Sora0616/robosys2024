@@ -2,7 +2,7 @@
 ロボットシステム学で利用するリポジトリ
 
 # year_end_lottery_simulatorコマンド 
-[![test](https://github.com/Sora0616/robosys2024/actions/workflows/test.combination.yml/badge.svg)](https://github.com/Sora0616/robosys2024/actions/workflows/test.combination.yml)
+[![test](https://github.com/Sora0616/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/Sora0616/robosys2024/actions/workflows/test.yml)
 
 
 ## 概要
