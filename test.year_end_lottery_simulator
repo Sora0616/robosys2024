@@ -33,6 +33,10 @@ out=$(echo "abc" | ./year_end_lottery_simulator)
 out=$(echo -100 | ./year_end_lottery_simulator)
 [ "$?" != 0 ] || ng "$LINENO"
 
+# テストケース7: 不正な入力（空白)
+out=$(echo 　| ./year_end_lottery_simulator)
+[ "$?" != 0 ] || ng "$LINENO"
+
 [ "${res}" = 0 ] && echo OK
 exit $res
 
