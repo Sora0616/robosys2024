@@ -60,8 +60,6 @@ $ echo 90000 | ./year_end_lottery_simulator
 ## 参照サイト
 - https://otokurashi.jp/nenmatsu-jumbo-2024/
 
-
-
 ## LICENSE・著作権
 - このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
 -  このパッケージのコードの一部は、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを、本人の許可を得て自身の著作としたものです。
