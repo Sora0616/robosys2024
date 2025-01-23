@@ -75,7 +75,7 @@ $ echo 90000 | ./year_end_lottery_simulator
 千葉工業大学 先進工学部未来ロボティクス学科 23C1115 平野蒼空
 
 ## 参考にしたサイト
-- https://otokurashi.jp/nenmatsu-jumbo-2024/
+- [年末ジャンボ2024](https://otokurashi.jp/nenmatsu-jumbo-2024/)
 
 ## LICENSE・著作権
 - このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
