@@ -16,7 +16,7 @@
 - Ubuntu 22.04 LTS
 
 ## 利用方法について
-### 1.実行前の準備
+### 1. 実行前の準備
 0. Git Hubをダウンロードしていない方はダウンロードしてください。
 ```
 $ sudo apt install git
@@ -37,7 +37,7 @@ $ cd robosys2024
 $ chmod +x year_end_lottery_simulator
 ```
 
-### 2.実行方法
+### 2. 実行方法
 ターミナルで以下のコマンドを出入力し、実行してください。
 ```
 $ echo 90000 | ./year_end_lottery_simulator
